@@ -1,6 +1,6 @@
 # Ignore virtual environments
 .venv/
-testfiles/series-00000/
+./testfiles/series-00000/
 
 # Ignore other files you want to exclude (optional)
 *.pyc
