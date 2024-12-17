@@ -2,6 +2,9 @@
 
 This Streamlit application allows users to upload and view DICOM images, as well as perform AI-based bounding box detection on uploaded images. It provides functionality for converting DICOM images to various formats and also leverages Google GenAI for object detection.
 
+![Alt text](Demo.png)
+
+
 ## Features
 
 1. **DICOM Viewer**:
