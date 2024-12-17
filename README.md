@@ -21,8 +21,8 @@ To run this application, follow the steps below to set up the necessary environm
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-directory>
+git clone https://github.com/thearpankumar/AI-Medical-Image-Scanner.git
+cd AI-Medical-Image-Scanner
 ```
 
 ### 2. Set env-variable 
