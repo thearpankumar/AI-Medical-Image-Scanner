@@ -1,0 +1,7 @@
+# Ignore virtual environments
+.venv/
+
+# Ignore other files you want to exclude (optional)
+*.pyc
+*.log
+
