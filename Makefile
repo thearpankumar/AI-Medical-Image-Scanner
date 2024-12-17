@@ -5,8 +5,9 @@ SHELL := /bin/bash
 VENV_DIR = .venv
 
 check: # Ruff check
-	@ruff check .
+	@ruff check . --fix
 	@echo "✅ Check complete!"
+
 
 fix: # Fix auto-fixable linting issues
 	@ruff check app.py --fix
