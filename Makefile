@@ -1,7 +1,7 @@
-SHELL :=/bin/bash
+SHELL := /bin/bash
 
-.PHONY: clean check setup
-.DEFAULT_GOAL=help
+.PHONY: clean check setup run help
+.DEFAULT_GOAL := help
 VENV_DIR = .venv
 
 check: # Ruff check
@@ -22,11 +22,12 @@ run: # Run the application
 	@streamlit run app.py
 
 setup: # Initial project setup
-	@echo "Creating virtual env at: $(VENV_DIR)"s
+	@echo "Creating virtual env at: $(VENV_DIR)"
 	@python3 -m venv $(VENV_DIR)
 	@echo "Installing dependencies..."
-	@source $(VENV_DIR)/bin/activate && pip install -r requirements.txt	@echo -e "\n✅ Done.\n🎉 Run the following commands to get started:\n\n ➡️ source $(VENV_DIR)/bin/activate\n ➡️ make run\n"
-
+	@source $(VENV_DIR)/bin/activate && pip install -r requirements.txt
+	@echo -e "\n✅ Done.\n🎉 Run the following commands to get started:\n\n ➡️  source $(VENV_DIR)/bin/activate\n ➡️  make run\n"
 
 help: # Show this help
 	@egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
